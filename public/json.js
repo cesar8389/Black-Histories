@@ -1,4 +1,4 @@
-// cartas do jogo
+
 const game_cards = {
     cards :
     [{
@@ -38,9 +38,3 @@ const game_cards = {
     },
     ] 
 };
-// endereço img  
-// numero carta 
-// historia 
-// solução 
-// lida 
-// 

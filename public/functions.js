@@ -1,9 +1,9 @@
-// verifica se existe o json no localStorage / se não tiver, coloca.
+
 if(localStorage.getItem("game_cards") == null){
     localStorage.setItem('game_cards', JSON.stringify(game_cards));
 }
 
-function shuffleCards(){ //embaralha as cartas e retorna uma não lida
+function shuffleCards(){
     let deck = JSON.parse(localStorage.getItem("game_cards"));
     let cardNumber = parseInt( getRandomArbitrary( 0 , deck.cards.length));
 
