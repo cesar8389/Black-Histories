@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./public/json.js"></script>
     <title>Black Stories</title>
     <link rel="stylesheet" href="public/style.css">
 </head>
@@ -19,13 +18,18 @@
                 
             </div>   
     </header>
-   
-   <footer>
-        desenvolvido por Manuel, Esdras, Careca
-   </footer>
+    <button id="card_button" onclick="shuffleCards()" type="button">
+        shuffle
+    </button>
+    <button id="card_button_read" onclick="readCard()" type="button">
+        read
+    </button>
+    <footer>
+        desenvolvido por Manoel, Esdras, Cesar
+    </footer>
     
 </body>
 
-
+<script src="./public/json.js"></script>
 <script src="./public/functions.js"></script>
 </html>
