@@ -3,7 +3,7 @@ body {
     overflow-x: hidden;
 }
 
-P {
+.p {
     color: white;
     font-family: fantasy;
 }
@@ -34,98 +34,6 @@ footer {
     flex-wrap: wrap;
     width: 100vw;
 }
-
-/*card*/
-.card-container {
-    padding-top: 70px;
-    width: 100vw;
-    position: relative;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    height: 450px;
-}
-
-.card-container::before {
-    content: "";
-    z-index: -1;
-    inset: 0;
-    background: linear-gradient(-45deg, #2971f8 0%, #2ff592 100%);
-    transform: translate3d(0, 0, 0) scale(0.95);
-    filter: blur(20px);
-}
-
-.card {
-    width: 30vw;
-    border-radius: inherit;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    position: relative;
-}
-
-.card .img-content {
-    width: 60vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(-45deg, #298af8 0%, #2e2e2e 100%);
-    transition: scale 0.6s, rotate 0.6s, filter 1s;
-}
-
-.card .img-content P {
-    font-size: 50px;
-}
-
-.card .img-content svg {
-    width: 10vw;
-    fill: #e8e8e8;
-    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
-}
-
-.card .content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 10px;
-    color: #e8e8e8;
-    line-height: 1.5;
-    border-radius: 5px;
-    opacity: 0;
-    pointer-events: none;
-    transform: translateY(50px);
-    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
-}
-
-.card .content .heading {
-    font-size: 32px;
-    font-weight: 50px;
-    font-family: fantasy;
-}
-
-.card .content p {
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 30px;
-}
-
-.card:hover .content {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.card:hover .img-content {
-    scale: 2.5;
-    rotate: 30deg;
-    filter: blur(100px);
-}
-
 /*button modal*/
 #fade {
     position: fixed;
@@ -191,7 +99,7 @@ button {
     background: #252525;
     box-shadow: 3px 3px #fafafa;
     cursor: pointer;
-    margin: 35px 0;
+    margin: 10px 0;
 }
 
 button:active {
@@ -199,3 +107,9 @@ button:active {
     transform: translate(3px, 3px);
 }
 
+#buttonNext{
+    text-align: right;
+    display: flex;
+    position: relative;
+    flex-direction: row-reverse;
+}

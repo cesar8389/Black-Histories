@@ -12,7 +12,6 @@ const toggleModal = () => {
 
 function carregarCont() {
   let div = document.getElementById("text_1");
-  console.log(rules);
 
   while (div.firstChild) {
     div.removeChild(div.lastChild)
@@ -22,6 +21,9 @@ function carregarCont() {
 
   div.appendChild(spamText);
   spamText.innerHTML = rules.rule1;
+
+  spamText.classList.add("p")
+  console.log(div)
 }
 
 [openModalButton, closeModalButton, fade].forEach((el) => {
