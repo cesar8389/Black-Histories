@@ -1,48 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Black Stories</title>
     <link rel="stylesheet" href="public/style.css">
 </head>
+
 <body>
-    <header>  
-            <div id="nav_bar">
-            
-                <a href="">Inicio</a>
-                
-                <a href="">Coleção</a>
-                
-                <a href="">Desenvolvedores</a>
-                
-            </div>   
+    <header>
+        <div id="nav_bar">
+
+            <a href="">Inicio</a>
+
+            <a href="">Coleção</a>
+
+            <a href="">Desenvolvedores</a>
+
+        </div>
     </header>
-    <div class="card-container">
-        <div class="card">
-        <div class="img-content">
-            <p>BLACK STORIES</p>
+    <button id="open-modal">Abrir</button>
+    <div id="fade" class="hide"></div>
+    <div id="modal" class="hide">
+        <div class="modal-header">
+            <h2>Este é o Modal</h2>
+            <button id="close-modal">Fechar</button>
         </div>
-        <div class="content">
-          <h3 class="heading">INSTRUÇÕES</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipii
-            voluptas ten mollitia pariatur odit, ab
-            minus ratione adipisci accusamus vel est excepturi laboriosam magnam
-            necessitatibus dignissimos molestias.
-          </p>
-        <button>
-            Button
-        </button>
+        <div class="modal-body" id="modal_1">
+            <div id="text_1">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, quam?
+                    Quas accusantium id cupiditate iste veritatis repudiandae odio dolore
+                    voluptas. Eum, deserunt quod. Sit similique laudantium assumenda
+                    repellat vel necessitatibus.
+                </p>
+            </div>
+            <button onclick="carregarCont()">Next</button>
         </div>
-      </div>
-      </div>
-    <footer>
-        desenvolvido por Manoel, Esdras, Cesar
-    </footer>
-    
+        <div id="fade" class="hide"></div>
 </body>
 
-<script src="./public/json.js"></script>
+<script src="./public/JSON FILES/json.js"></script>
+<script src="./public/JSON FILES/rules.js"></script>
 <script src="./public/functions.js"></script>
+<script src="./public/modal_rules.js"></script>
+
 </html>
