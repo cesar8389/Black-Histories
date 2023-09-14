@@ -15,6 +15,8 @@ buttonNext.value = 1;
 let buttonBack = document.getElementById("ButtonBack");
 
 
+let button = document.getElementById("buttonNext");
+button.value = 1;
 function carregarCont() {
   let div = document.getElementById("text_1");
 

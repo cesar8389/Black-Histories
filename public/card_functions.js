@@ -20,3 +20,4 @@ function getRandomArbitrary(min, max) {
 function readCard(){
 
 }
+
