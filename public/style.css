@@ -107,7 +107,7 @@ button:active {
     transform: translate(3px, 3px);
 }
 
-#buttonNext{
+#div_buttonModal{
     text-align: right;
     display: flex;
     position: relative;

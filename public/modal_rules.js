@@ -9,6 +9,11 @@ const toggleModal = () => {
   modal.classList.toggle("hide");
   fade.classList.toggle("hide");
 };
+let buttonNext = document.getElementById("ButtonNext");
+buttonNext.value = 1;
+
+let buttonBack = document.getElementById("ButtonBack");
+
 
 function carregarCont() {
   let div = document.getElementById("text_1");
@@ -19,11 +24,54 @@ function carregarCont() {
 
   let spamText = document.createElement("spam");
 
-  div.appendChild(spamText);
-  spamText.innerHTML = rules.rule1;
-
   spamText.classList.add("p")
-  console.log(div)
+
+  div.appendChild(spamText);
+
+
+  switch (buttonNext.value) {
+    case "1":
+      buttonBack.value = 1;
+      spamText.innerHTML = rules.rule1;
+      buttonNext.value = 2;
+      console.log(1)
+      break;
+    case "2":
+      spamText.innerHTML = rules.rule2;
+      buttonNext.value = 3;
+      console.log(2)
+      break;
+    case "3":
+      spamText.innerHTML = rules.rule3;
+      buttonNext.value = 4;
+      console.log(3)
+      break;
+    case "4":
+      spamText.innerHTML = rules.rule4;
+      console.log(4)
+      break;
+  }
+  switch (buttonBack.value) {
+    case "1":
+      spamText.innerHTML = rules.rule1;
+      buttonBack.value = 2;
+      console.log(1)
+      break;
+    case "2":
+      spamText.innerHTML = rules.rule2;
+      buttonBack.value = 3;
+      console.log(2)
+      break;
+    case "3":
+      spamText.innerHTML = rules.rule3;
+      buttonBack.value = 4;
+      console.log(3)
+      break;
+    case "4":
+      spamText.innerHTML = rules.rule4;
+      console.log(4)
+      break;
+  }
 }
 
 [openModalButton, closeModalButton, fade].forEach((el) => {
