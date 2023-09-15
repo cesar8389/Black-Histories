@@ -12,6 +12,11 @@ const toggleModal = () => {
 
 let buttonNext = document.getElementById("ButtonNext");
 let buttonBack = document.getElementById("ButtonBack");
+buttonBack.value = 4;
+
+buttonNext.value = 1;
+
+let buttonBack = document.getElementById("ButtonBack");
 
 buttonNext.value = 1;
 
