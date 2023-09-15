@@ -9,14 +9,27 @@ const toggleModal = () => {
   modal.classList.toggle("hide");
   fade.classList.toggle("hide");
 };
-let buttonNext = document.getElementById("ButtonNext");
-buttonNext.value = 1;
 
+let buttonNext = document.getElementById("ButtonNext");
 let buttonBack = document.getElementById("ButtonBack");
 
+buttonNext.value = 1;
 
-let button = document.getElementById("buttonNext");
-button.value = 1;
+let flag_buttonNext = false;
+
+carregarCont();
+buttonNext.addEventListener('click', function listenButtonNext(){
+  flag_buttonNext = true;
+  carregarCont();
+});
+buttonBack.addEventListener('click', function listenButtonBack(){
+  carregarCont();
+});
+
+function resetFlagButton(){
+  flag_buttonNext = false;
+}
+
 function carregarCont() {
   let div = document.getElementById("text_1");
 
@@ -25,56 +38,61 @@ function carregarCont() {
   }
 
   let spamText = document.createElement("spam");
-
   spamText.classList.add("p")
-
   div.appendChild(spamText);
 
-
-  switch (buttonNext.value) {
-    case "1":
-      buttonBack.value = 1;
-      spamText.innerHTML = rules.rule1;
-      buttonNext.value = 2;
-      console.log(1)
-      break;
-    case "2":
-      spamText.innerHTML = rules.rule2;
-      buttonNext.value = 3;
-      console.log(2)
-      break;
-    case "3":
-      spamText.innerHTML = rules.rule3;
-      buttonNext.value = 4;
-      console.log(3)
-      break;
-    case "4":
-      spamText.innerHTML = rules.rule4;
-      console.log(4)
-      break;
-  }
-  switch (buttonBack.value) {
-    case "1":
-      spamText.innerHTML = rules.rule1;
-      buttonBack.value = 2;
-      console.log(1)
-      break;
-    case "2":
-      spamText.innerHTML = rules.rule2;
-      buttonBack.value = 3;
-      console.log(2)
-      break;
-    case "3":
-      spamText.innerHTML = rules.rule3;
-      buttonBack.value = 4;
-      console.log(3)
-      break;
-    case "4":
-      spamText.innerHTML = rules.rule4;
-      console.log(4)
-      break;
-  }
+  if(flag_buttonNext){
+    switch (buttonNext.value) {
+      case "1":
+        spamText.innerHTML = rules.rule1;
+        buttonNext.value = 2;
+        resetFlagButton();
+        break;
+      case "2":
+        spamText.innerHTML = rules.rule2;
+        buttonNext.value = 3;
+        buttonBack.value = 1;
+        resetFlagButton();
+        break;
+      case "3":
+        spamText.innerHTML = rules.rule3;
+        buttonNext.value = 4;
+        buttonBack.value = 2;
+        resetFlagButton();
+        break;
+      case "4":
+        spamText.innerHTML = rules.rule4;
+        buttonBack.value = 3;
+        resetFlagButton();
+        break;
+    }
+  }else{
+    switch (buttonBack.value) {
+      case "1":
+        spamText.innerHTML = rules.rule1;
+        buttonNext.value = 2;
+        break;
+      case "2":
+        spamText.innerHTML = rules.rule2;
+        buttonBack.value = 1;
+        buttonNext.value = 3;
+        break;
+      case "3":
+        spamText.innerHTML = rules.rule3;
+        buttonBack.value = 2;
+        buttonNext.value = 4;
+        break;
+      case "4":
+        spamText.innerHTML = rules.rule4;
+        buttonBack.value = 3;
+        buttonNext.value = 5;
+        break;
+      }
+  }  
 }
+
+
+
 
 [openModalButton, closeModalButton, fade].forEach((el) => {
   el.addEventListener("click", () => toggleModal());
