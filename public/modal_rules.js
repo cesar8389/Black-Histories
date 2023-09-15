@@ -13,11 +13,18 @@ let buttonNext = document.getElementById("ButtonNext");
 buttonNext.value = 1;
 
 let buttonBack = document.getElementById("ButtonBack");
+buttonBack.value = 4;
 
+carregarContNext();
+buttonNext.addEventListener('click', function callNext() {
+  console.log("this ->", this)
+});
 
-let button = document.getElementById("buttonNext");
-button.value = 1;
-function carregarCont() {
+buttonBack.addEventListener('click', function callBack() {
+  console.log("this ->", this)
+});
+
+function carregarContNext() {
   let div = document.getElementById("text_1");
 
   while (div.firstChild) {
@@ -30,10 +37,8 @@ function carregarCont() {
 
   div.appendChild(spamText);
 
-
   switch (buttonNext.value) {
     case "1":
-      buttonBack.value = 1;
       spamText.innerHTML = rules.rule1;
       buttonNext.value = 2;
       console.log(1)
@@ -53,24 +58,39 @@ function carregarCont() {
       console.log(4)
       break;
   }
+
+}
+function carregarContBack() {
+  let div = document.getElementById("text_1");
+
+  while (div.firstChild) {
+    div.removeChild(div.lastChild)
+  }
+  
+  let spamText = document.createElement("spam");
+
+  spamText.classList.add("p")
+
+  div.appendChild(spamText);
+
   switch (buttonBack.value) {
-    case "1":
-      spamText.innerHTML = rules.rule1;
-      buttonBack.value = 2;
+    case "4":
+      spamText.innerHTML = rules.rule4;
+      buttonBack.value = 1;
       console.log(1)
+      break;
+    case "3":
+      spamText.innerHTML = rules.rule3;
+      buttonBack.value = 2;
+      console.log(2)
       break;
     case "2":
       spamText.innerHTML = rules.rule2;
       buttonBack.value = 3;
-      console.log(2)
-      break;
-    case "3":
-      spamText.innerHTML = rules.rule3;
-      buttonBack.value = 4;
       console.log(3)
       break;
-    case "4":
-      spamText.innerHTML = rules.rule4;
+    case "1":
+      spamText.innerHTML = rules.rule1;
       console.log(4)
       break;
   }
