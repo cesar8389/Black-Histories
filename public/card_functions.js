@@ -1,9 +1,9 @@
 console.log("element -->", document);
 let card_button = document.getElementById('card_button');
 
-
 if (localStorage.getItem("game_cards") == null) {
     localStorage.setItem('game_cards', JSON.stringify(game_cards));
+    localStorage.setItem('choose_one', JSON.stringify(game_cards.cards[0]));
 }
 
 function shuffleCards() {
@@ -16,7 +16,8 @@ function shuffleCards() {
     }
 
     localStorage.setItem("choose_one", JSON.stringify(deck.cards[cardNumber]));
-    return deck.cards[cardNumber];
+    showChooseCard();
+    return;
 }
 
 function getRandomArbitrary(min, max) {
@@ -37,4 +38,18 @@ function readCard() {
             console.log("no");
         }
     }
+}
+
+function showChooseCard() {
+    let titleText = document.getElementById('title_card');
+    let storyText = document.getElementById('story_text');
+    let solutionText = document.getElementById('solution_text');
+
+    let card_info = JSON.parse(localStorage.getItem('choose_one'));
+
+    console.log("card info ---->", card_info);
+
+    titleText.innerText = card_info.title;
+    storyText.innerText = card_info.story;
+    solutionText.innerText = card_info.solution;
 }

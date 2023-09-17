@@ -219,3 +219,12 @@ button:active {
         opacity: 0.3;
     }
 }
+
+#div_game_buttons {
+    width: 100vw;
+    height: 27vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}

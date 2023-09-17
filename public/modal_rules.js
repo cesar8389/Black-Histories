@@ -12,26 +12,18 @@ const toggleModal = () => {
 
 let buttonNext = document.getElementById("ButtonNext");
 let buttonBack = document.getElementById("ButtonBack");
-buttonBack.value = 4;
-
-buttonNext.value = 1;
-
-let buttonBack = document.getElementById("ButtonBack");
-
-buttonNext.value = 1;
-
 let flag_buttonNext = false;
+buttonNext.value = 1;
 
-carregarCont();
-buttonNext.addEventListener('click', function listenButtonNext(){
+buttonNext.addEventListener('click', function listenButtonNext() {
   flag_buttonNext = true;
   carregarCont();
 });
-buttonBack.addEventListener('click', function listenButtonBack(){
+buttonBack.addEventListener('click', function listenButtonBack() {
   carregarCont();
 });
 
-function resetFlagButton(){
+function resetFlagButton() {
   flag_buttonNext = false;
 }
 
@@ -46,7 +38,7 @@ function carregarCont() {
   spamText.classList.add("p")
   div.appendChild(spamText);
 
-  if(flag_buttonNext){
+  if (flag_buttonNext) {
     switch (buttonNext.value) {
       case "1":
         spamText.innerHTML = rules.rule1;
@@ -71,7 +63,7 @@ function carregarCont() {
         resetFlagButton();
         break;
     }
-  }else{
+  } else {
     switch (buttonBack.value) {
       case "1":
         spamText.innerHTML = rules.rule1;
@@ -92,11 +84,9 @@ function carregarCont() {
         buttonBack.value = 3;
         buttonNext.value = 5;
         break;
-      }
-  }  
+    }
+  }
 }
-
-
 
 
 [openModalButton, closeModalButton, fade].forEach((el) => {

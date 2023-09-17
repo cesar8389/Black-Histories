@@ -24,18 +24,20 @@
         <div class="myCard">
             <div class="innerCard">
                 <div class="frontSide">
-                    <p class="title">FRONT SIDE</p>
-                    <p>Hover Me</p>
+                    <p class="title" id="title_card">Black Stories</p>
+                    <p id="story_text">Hover Me</p>
                 </div>
                 <div class="backSide">
-                    <p class="title">BACK SIDE</p>
-                    <p>Leave Me</p>
+                    <p id="solution_text">Leave Me</p>
                 </div>
             </div>
         </div>
     </div>
+    <div id="div_game_buttons">
+        <button id="open-modal">Abrir</button>
+        <button id="card_button" onclick="showChooseCard()">teste card</button>
+    </div>
 
-    <button id="open-modal">Abrir</button>
     <div id="fade" class="hide"></div>
     <div id="modal" class="hide">
         <div class="modal-header">
@@ -47,15 +49,16 @@
 
             </div>
             <div id="div_buttonModal">
-                <button id="ButtonNext" >Next</button>
-                <button id="ButtonBack" >Back</button>
+                <button id="ButtonNext">Next</button>
+                <button id="ButtonBack">Back</button>
             </div>
         </div>
     </div>
     <div id="fade" class="hide"></div>
+
 </body>
 
-<script src="./public/JSON FILES/json.js"></script>
+<script src="./public/JSON FILES/cards.js"></script>
 <script src="./public/JSON FILES/rules.js"></script>
 <script src="./public/card_functions.js"></script>
 <script src="./public/modal_rules.js"></script>
