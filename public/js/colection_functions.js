@@ -3,9 +3,12 @@ const game_cards = JSON.parse(localStorage.getItem('game_cards'));
 
 console.log(game_cards.cards);
 
-for (let i = 0; i <= game_cards.cards.length; i++) {
+for (const card of game_cards.cards) {
     let div_cards = document.createElement('div');
     div_cards.classList.add('cards');
-    div_cards.innerText = game_cards.cards[i].title;
+    div_cards.innerText = card.title;
+    let backgroundImg = document.createElement('img');
+    backgroundImg.src = card.img;
+    div_cards.appendChild(backgroundImg);
     colectionDiv.appendChild(div_cards);
 }
