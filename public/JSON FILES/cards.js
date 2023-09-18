@@ -11,8 +11,8 @@ const game_cards = {
         },
         {
             "id": 1,
-            "img": '',
-            "title": "",
+            "img": '/img',
+            "title": "careca que da em cima da irmão dos outros",
             "story": "xxxxxxxxxx",
             "solution": "x",
             "read": false
