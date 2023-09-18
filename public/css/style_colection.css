@@ -38,6 +38,7 @@ body {
 }
 
 .cards {
+    overflow: hidden;
     display: flex;
     width: 150px;
     height: 230px;

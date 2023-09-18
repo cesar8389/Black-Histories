@@ -3,7 +3,7 @@ const game_cards = {
     cards:
         [{
             "id": 0,
-            "img": '',
+            "img": './public/img/um_copo.png',
             "title": "Um copo d'água",
             "story": " Um homem entra em um bar e pede um copo d'água. O barman puxa uma arma de baixo do balcão e aponta para a cabeça do homem, que responde 'obrigado' e sai do bar.",
             "solution": "O homem havia entrado no bar para se livrar de soluços, procurando um copo d'água. O barman, percebendo a situação, saca a arma e aponta-a para o homem, a fim de curá-lo com um susto",
@@ -11,7 +11,7 @@ const game_cards = {
         },
         {
             "id": 1,
-            "img": '/img',
+            "img": "./public/img/um_copo.png",
             "title": "careca que da em cima da irmão dos outros",
             "story": "xxxxxxxxxx",
             "solution": "x",
@@ -19,7 +19,7 @@ const game_cards = {
         },
         {
             "id": 2,
-            "img": '',
+            "img": '../img/um_copo.png',
             "title": "",
             "story": "xsasasasasa",
             "solution": "x",
@@ -27,7 +27,7 @@ const game_cards = {
         },
         {
             "id": 3,
-            "img": '',
+            "img": '../img/um_copo.png',
             "title": "",
             "story": "xxxxxxxxxx",
             "solution": "x",
@@ -35,7 +35,7 @@ const game_cards = {
         },
         {
             "id": 4,
-            "img": '',
+            "img": '../img/um_copo.png',
             "title": "",
             "story": "xxxxxxxxxx",
             "solution": "x",
@@ -43,7 +43,7 @@ const game_cards = {
         },
         {
             "id": 5,
-            "img": '',
+            "img": '../img/um_copo.png',
             "title": "",
             "story": "xxxxxxxxxx",
             "solution": "x",
@@ -51,7 +51,7 @@ const game_cards = {
         },
         {
             "id": 6,
-            "img": '',
+            "img": '../img/um_copo.png',
             "title": "",
             "story": "xxxxxxxxxx",
             "solution": "x",
@@ -59,7 +59,7 @@ const game_cards = {
         },
         {
             "id": 7,
-            "img": '',
+            "img": '../img/um_copo.png',
             "title": "",
             "story": "xxxxxxxxxx",
             "solution": "x",
@@ -67,7 +67,7 @@ const game_cards = {
         },
         {
             "id": 0,
-            "img": '',
+            "img": '../img/um_copo.png',
             "title": "Um copo d'água",
             "story": " Um homem entra em um bar e pede um copo d'água. O barman puxa uma arma de baixo do balcão e aponta para a cabeça do homem, que responde 'obrigado' e sai do bar.",
             "solution": "O homem havia entrado no bar para se livrar de soluços, procurando um copo d'água. O barman, percebendo a situação, saca a arma e aponta-a para o homem, a fim de curá-lo com um susto",
@@ -75,7 +75,7 @@ const game_cards = {
         },
         {
             "id": 1,
-            "img": '',
+            "img": '../img/um_copo.png',
             "title": "",
             "story": "xxxxxxxxxx",
             "solution": "x",
@@ -83,7 +83,7 @@ const game_cards = {
         },
         {
             "id": 2,
-            "img": '',
+            "img": '../img/um_copo.png',
             "title": "",
             "story": "xsasasasasa",
             "solution": "x",
@@ -91,7 +91,7 @@ const game_cards = {
         },
         {
             "id": 3,
-            "img": '',
+            "img": '../img/um_copo.png',
             "title": "",
             "story": "xxxxxxxxxx",
             "solution": "x",
@@ -99,7 +99,7 @@ const game_cards = {
         },
         {
             "id": 4,
-            "img": '',
+            "img": '../img/um_copo.png',
             "title": "",
             "story": "xxxxxxxxxx",
             "solution": "x",
@@ -107,7 +107,7 @@ const game_cards = {
         },
         {
             "id": 5,
-            "img": '',
+            "img": '../img/um_copo.png',
             "title": "",
             "story": "xxxxxxxxxx",
             "solution": "x",
@@ -115,7 +115,7 @@ const game_cards = {
         },
         {
             "id": 6,
-            "img": '',
+            "img": '../img/um_copo.png',
             "title": "",
             "story": "xxxxxxxxxx",
             "solution": "x",
@@ -123,7 +123,7 @@ const game_cards = {
         },
         {
             "id": 7,
-            "img": '',
+            "img": '../img/um_copo.png',
             "title": "",
             "story": "xxxxxxxxxx",
             "solution": "x",
@@ -131,7 +131,7 @@ const game_cards = {
         },
         {
             "id": 4,
-            "img": '',
+            "img": '../img/um_copo.png',
             "title": "",
             "story": "xxxxxxxxxx",
             "solution": "x",
@@ -139,7 +139,7 @@ const game_cards = {
         },
         {
             "id": 5,
-            "img": '',
+            "img": '../img/um_copo.png',
             "title": "",
             "story": "xxxxxxxxxx",
             "solution": "x",
@@ -147,7 +147,7 @@ const game_cards = {
         },
         {
             "id": 6,
-            "img": '',
+            "img": '../img/um_copo.png',
             "title": "",
             "story": "xxxxxxxxxx",
             "solution": "x",
@@ -155,7 +155,7 @@ const game_cards = {
         },
         {
             "id": 7,
-            "img": '',
+            "img": '../img/um_copo.png',
             "title": "",
             "story": "xxxxxxxxxx",
             "solution": "x",
