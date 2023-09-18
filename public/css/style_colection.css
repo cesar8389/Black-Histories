@@ -1,0 +1,55 @@
+body {
+    background-color: black;
+    margin: auto 0;
+    padding: auto 0;
+    overflow-x: hidden;
+}
+
+#nav_bar a {
+    font-family: fantasy;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0px 90px;
+    width: 60px;
+}
+
+#nav_bar {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* -------- div colection ---------*/
+
+#card_colection_div {
+    margin-top: 6%;
+    width: 98vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.cards {
+    display: flex;
+    width: 150px;
+    height: 230px;
+    margin: 10px;
+    backface-visibility: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 1rem;
+    color: white;
+    box-shadow: rgba(255, 255, 255, 0.5) 0px 0px 0.3em;
+    font-weight: 700;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
