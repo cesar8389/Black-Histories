@@ -52,23 +52,29 @@ body {
     justify-content: center;
     align-items: center;
     z-index: -1;
+    font-size: 14px;
 }
 
 .cards img {
-    max-width: 100%;
+    max-width: 150%;
     height: auto;
 }
 
 .cards p {
-    padding-top: 170px;
-    padding-left: 200px;
+    padding: 10px 50px;
     font-weight: 900;
     color: aliceblue;
     position: absolute;
     background-size: cover;
-    top: 35%;
+    top: 85%;
+    left: 50%;
     transform: translate(-50%, -50%);
     font-family: cursive;
     margin: auto;
     text-align: center;
+    overflow-wrap: break-word;
+}
+
+.title{
+    width: 151px;
 }
