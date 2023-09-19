@@ -34,12 +34,13 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-
+    overflow: auto;
 }
 
 .cards {
+    position: relative;
     overflow: hidden;
-    display: flex;
+    flex-direction: column;
     width: 150px;
     height: 230px;
     margin: 10px;
@@ -48,9 +49,26 @@ body {
     border-radius: 1rem;
     color: white;
     box-shadow: rgba(255, 255, 255, 0.5) 0px 0px 0.3em;
-    font-weight: 700;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: -1;
+}
 
+.cards img {
+    max-width: 100%;
+    height: auto;
+}
+
+.cards p {
+    padding-top: 170px;
+    padding-left: 200px;
+    font-weight: 900;
+    color: aliceblue;
+    position: absolute;
+    background-size: cover;
+    top: 35%;
+    transform: translate(-50%, -50%);
+    font-family: cursive;
+    margin: auto;
+    text-align: center;
 }
