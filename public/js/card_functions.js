@@ -53,3 +53,8 @@ function showChooseCard() {
     storyText.innerText = card_info.story;
     solutionText.innerText = card_info.solution;
 }
+
+const urlParams = new URLSearchParams(window.location.search);
+if (urlParams.has("choose_one") && urlParams.get("choose_one") === "true") {
+    showChooseCard();
+}

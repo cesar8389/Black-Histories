@@ -2,7 +2,7 @@
 const game_cards = {
     cards:
         [{
-            "id": 0,
+            "id": 1,
             "img": './public/img/um_copo.png',
             "title": "Um copo d'água",
             "story": " Um homem entra em um bar e pede um copo d'água. O barman puxa uma arma de baixo do balcão e aponta para a cabeça do homem, que responde 'obrigado' e sai do bar.",
@@ -10,7 +10,7 @@ const game_cards = {
             "read": false
         },
         {
-            "id": 1,
+            "id": 2,
             "img": "./public/img/o_ultimo_trem.png",
             "title": "O último trem",
             "story": "xxxxxxxxxx",
@@ -18,7 +18,7 @@ const game_cards = {
             "read": false
         },
         {
-            "id": 2,
+            "id": 3,
             "img": './public/img/uma_porta_aberta.png',
             "title": "Uma porta aberta",
             "story": "xsasasasasa",
@@ -26,7 +26,7 @@ const game_cards = {
             "read": true
         },
         {
-            "id": 3,
+            "id": 4,
             "img": './public/img/o_acidente.png',
             "title": "O acidente",
             "story": "xxxxxxxxxx",
@@ -34,7 +34,7 @@ const game_cards = {
             "read": false
         },
         {
-            "id": 4,
+            "id": 5,
             "img": './public/img/testemunha_sequestro.png',
             "title": "Testemunha de um sequestro",
             "story": "xxxxxxxxxx",
@@ -42,7 +42,7 @@ const game_cards = {
             "read": false
         },
         {
-            "id": 5,
+            "id": 6,
             "img": './public/img/um_roubo.png',
             "title": "Um roubo sem solução",
             "story": "xxxxxxxxxx",
@@ -50,7 +50,7 @@ const game_cards = {
             "read": false
         },
         {
-            "id": 6,
+            "id": 7,
             "img": './public/img/doutor.png',
             "title": "Doutor, doutor",
             "story": "xxxxxxxxxx",
@@ -58,7 +58,7 @@ const game_cards = {
             "read": false
         },
         {
-            "id": 7,
+            "id": 8,
             "img": './public/img/perdido.png',
             "title": "Perdido",
             "story": "xxxxxxxxxx",
@@ -66,7 +66,7 @@ const game_cards = {
             "read": false
         },
         {
-            "id": 0,
+            "id": 9,
             "img": './public/img/splish_splash.png',
             "title": "Splish, splash!",
             "story": " ",
@@ -74,7 +74,7 @@ const game_cards = {
             "read": false
         },
         {
-            "id": 1,
+            "id": 10,
             "img": './public/img/um_assassinato.png',
             "title": "Um assassinato nada surpreendente",
             "story": "xxxxxxxxxx",
@@ -82,7 +82,7 @@ const game_cards = {
             "read": false
         },
         {
-            "id": 2,
+            "id": 11,
             "img": './public/img/o_homem_enforcado.png',
             "title": "O homem enforcado",
             "story": "xsasasasasa",
@@ -90,7 +90,7 @@ const game_cards = {
             "read": true
         },
         {
-            "id": 3,
+            "id": 12,
             "img": './public/img/tarde_demais.png',
             "title": "Tarde demais",
             "story": "xxxxxxxxxx",
@@ -98,7 +98,7 @@ const game_cards = {
             "read": false
         },
         {
-            "id": 4,
+            "id": 13,
             "img": './public/img/a_chave_misteriosa.png',
             "title": "A chave misteriosa",
             "story": "xxxxxxxxxx",
@@ -106,7 +106,7 @@ const game_cards = {
             "read": false
         },
         {
-            "id": 5,
+            "id": 14,
             "img": './public/img/ilha_tesouro.png',
             "title": "Ilha do tesouro",
             "story": "xxxxxxxxxx",
@@ -114,7 +114,7 @@ const game_cards = {
             "read": false
         },
         {
-            "id": 6,
+            "id": 15,
             "img": './public/img/batida.png',
             "title": "Batida!",
             "story": "xxxxxxxxxx",
@@ -122,7 +122,7 @@ const game_cards = {
             "read": false
         },
         {
-            "id": 7,
+            "id": 16,
             "img": './public/img/banho_de_manhã.png',
             "title": "Banho de manhã",
             "story": "xxxxxxxxxx",
@@ -130,7 +130,7 @@ const game_cards = {
             "read": false
         },
         {
-            "id": 4,
+            "id": 17,
             "img": './public/img/uma_voz.png',
             "title": "Uma voz extremamente familiar",
             "story": "xxxxxxxxxx",
@@ -138,7 +138,7 @@ const game_cards = {
             "read": false
         },
         {
-            "id": 5,
+            "id": 18,
             "img": './public/img/uma_surpresa.png',
             "title": "Uma surpresa de natal",
             "story": "xxxxxxxxxx",
@@ -146,7 +146,7 @@ const game_cards = {
             "read": false
         },
         {
-            "id": 6,
+            "id": 19,
             "img": './public/img/pare.png',
             "title": "Pare",
             "story": "xxxxxxxxxx",
@@ -154,7 +154,7 @@ const game_cards = {
             "read": false
         },
         {
-            "id": 7,
+            "id": 20,
             "img": './public/img/o_papel.png',
             "title": "O papel",
             "story": "xxxxxxxxxx",

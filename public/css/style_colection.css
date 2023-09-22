@@ -34,7 +34,8 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-    overflow: auto;
+    overflow: hidden;
+    cursor: pointer;
 }
 
 .cards {
@@ -51,7 +52,6 @@ body {
     box-shadow: rgba(255, 255, 255, 0.5) 0px 0px 0.3em;
     justify-content: center;
     align-items: center;
-    z-index: -1;
     font-size: 14px;
 }
 
@@ -75,6 +75,12 @@ body {
     overflow-wrap: break-word;
 }
 
-.title{
+.title {
     width: 151px;
+}
+
+.cards a {
+    display: flex;
+    width: 100%;
+    height: 100%;
 }
