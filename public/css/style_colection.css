@@ -1,0 +1,86 @@
+body {
+    background-color: black;
+    margin: auto 0;
+    padding: auto 0;
+    overflow-x: hidden;
+}
+
+#nav_bar a {
+    font-family: fantasy;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0px 90px;
+    width: 60px;
+}
+
+#nav_bar {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* -------- div colection ---------*/
+
+#card_colection_div {
+    margin-top: 6%;
+    width: 98vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.cards {
+    position: relative;
+    overflow: hidden;
+    flex-direction: column;
+    width: 150px;
+    height: 230px;
+    margin: 10px;
+    backface-visibility: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 1rem;
+    color: white;
+    box-shadow: rgba(255, 255, 255, 0.5) 0px 0px 0.3em;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+.cards img {
+    max-width: 150%;
+    height: auto;
+}
+
+.cards p {
+    padding: 10px 50px;
+    font-weight: 900;
+    color: aliceblue;
+    position: absolute;
+    background-size: cover;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: cursive;
+    margin: auto;
+    text-align: center;
+    overflow-wrap: break-word;
+}
+
+.title {
+    width: 151px;
+}
+
+.cards a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
