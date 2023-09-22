@@ -1,31 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./public/json.js"></script>
     <title>Black Stories</title>
-    <link rel="stylesheet" href="public/style.css">
+    <link rel="stylesheet" href="public/css/style.css">
 </head>
+
 <body>
-    <header>  
-            <div id="nav_bar">
-            
-                <a href="">Inicio</a>
-                
-                <a href="">Coleção</a>
-                
-                <a href="">Desenvolvedores</a>
-                
-            </div>   
+    <header>
+        <div id="nav_bar">
+
+            <a href="">Inicio</a>
+
+            <a href="./colection_page.html">Coleção</a>
+
+            <a href="">Desenvolvedores</a>
+
+        </div>
     </header>
-   
-   <footer>
-        desenvolvido por Manuel, Esdras, Careca
-   </footer>
-    
+    <div id="div_card">
+        <div class="myCard">
+            <div class="innerCard">
+                <div class="frontSide">
+                    <p class="title" id="title_card">Black Stories</p>
+                    <p id="story_text">Hover Me</p>
+                </div>
+                <div class="backSide">
+                    <p id="solution_text">Leave Me</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="div_game_buttons">
+        <button id="open-modal">Abrir</button>
+        <button id="card_button" onclick="showChooseCard()">teste card</button>
+    </div>
+
+    <div id="fade" class="hide"></div>
+    <div id="modal" class="hide">
+        <div class="modal-header">
+            <h2>Este é o Modal</h2>
+            <button id="close-modal">Fechar</button>
+        </div>
+        <div class="modal-body" id="modal_1">
+            <div id="text_1">
+
+            </div>
+            <div id="div_buttonModal">
+                <button id="ButtonNext">Next</button>
+                <button id="ButtonBack">Back</button>
+            </div>
+        </div>
+    </div>
+    <div id="fade" class="hide"></div>
+
 </body>
 
+<script src="./public/JSON FILES/cards.js"></script>
+<script src="./public/JSON FILES/rules.js"></script>
+<script src="./public/js/card_functions.js"></script>
+<script src="./public/js/modal_rules.js"></script>
 
-<script src="./public/functions.js"></script>
 </html>
