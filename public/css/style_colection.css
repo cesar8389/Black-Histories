@@ -56,8 +56,8 @@ body {
 }
 
 .cards img {
-    max-width: 150%;
-    height: auto;
+    width: 100%;
+    height: auto;  
 }
 
 .cards p {
