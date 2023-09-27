@@ -10,6 +10,11 @@ body {
     font-family: fantasy;
 }
 
+h2 {
+    color: white;
+    font-family: cursive;
+}
+
 footer {
     bottom: 0;
     position: fixed;
@@ -137,6 +142,46 @@ button:active {
     color: white;
     font-family: monospace;
     font-size: 1.5rem;
+}
+
+#open-modal {
+    display: flex;
+    width: 70px;
+    height: 35px;
+    font-size: 16px;
+    justify-content: center;
+    padding: 5px 0px 0px 0px;
+    margin: 15px 0px 0px 30px;
+}
+
+#ButtonNext {
+    display: flex;
+    width: 70px;
+    height: 35px;
+    font-size: 16px;
+    justify-content: center;
+    padding: 5px 0px 0px 0px;
+    margin: 15px 0px 0px 30px;
+}
+
+#ButtonBack {
+    display: flex;
+    width: 70px;
+    height: 35px;
+    font-size: 16px;
+    justify-content: center;
+    padding: 5px 0px 0px 0px;
+    margin: 15px 0px 0px -30px;
+}
+
+#close-modal {
+    display: flex;
+    width: 70px;
+    height: 35px;
+    font-size: 16px;
+    justify-content: center;
+    padding: 5px 0px 0px 0px;
+    margin: 15px 0px 0px 30px;
 }
 
 
