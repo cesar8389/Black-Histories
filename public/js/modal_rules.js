@@ -4,6 +4,7 @@ const nextModalButton = document.querySelector("#next-modal");
 const backModalButton = document.querySelector("#back-modal");
 const modal = document.querySelector("#modal");
 const fade = document.querySelector("#fade");
+
 let text = document.createElement('p');
 let spanText = document.createElement("span");
 let div = document.getElementById("text_1");
@@ -14,6 +15,7 @@ text.appendChild(spanText);
 const toggleModal = () => {
   console.log('abriu modal');
   spanText.innerHTML = rules.rule1;
+
   buttonNext.value = 2;
   resetFlagButton();
   modal.classList.toggle("hide");
