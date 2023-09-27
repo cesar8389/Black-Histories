@@ -4,8 +4,17 @@ const nextModalButton = document.querySelector("#next-modal");
 const backModalButton = document.querySelector("#back-modal");
 const modal = document.querySelector("#modal");
 const fade = document.querySelector("#fade");
+let spamText = document.createElement("spam");
+let div = document.getElementById("text_1");
+
+div.appendChild(spamText);
 
 const toggleModal = () => {
+  console.log('abriu modal');
+  spamText.classList.add("p");
+  spamText.innerHTML = rules.rule1;
+  buttonNext.value = 2;
+  resetFlagButton();
   modal.classList.toggle("hide");
   fade.classList.toggle("hide");
 };
@@ -17,6 +26,7 @@ buttonNext.value = 1;
 
 buttonNext.addEventListener('click', function listenButtonNext() {
   flag_buttonNext = true;
+  console.log(this.value)
   carregarCont();
 });
 buttonBack.addEventListener('click', function listenButtonBack() {
@@ -28,23 +38,9 @@ function resetFlagButton() {
 }
 
 function carregarCont() {
-  let div = document.getElementById("text_1");
-
-  while (div.firstChild) {
-    div.removeChild(div.lastChild)
-  }
-
-  let spamText = document.createElement("spam");
-  spamText.classList.add("p")
-  div.appendChild(spamText);
 
   if (flag_buttonNext) {
     switch (buttonNext.value) {
-      case "1":
-        spamText.innerHTML = rules.rule1;
-        buttonNext.value = 2;
-        resetFlagButton();
-        break;
       case "2":
         spamText.innerHTML = rules.rule2;
         buttonNext.value = 3;
