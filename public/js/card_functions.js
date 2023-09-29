@@ -1,7 +1,12 @@
-console.log("element -->", document);
 let card_button = document.getElementById('card_button');
 let choose_one = JSON.parse(localStorage.getItem("choose_one"));
 let readCheckbox = document.getElementById('read_checkbox');
+
+card_button.addEventListener('click', function () {
+    readCheckbox.checked = choose_one.read;
+    shuffleCards();
+    showChooseCard();
+});
 
 if (localStorage.getItem("game_cards") == null) {
     localStorage.setItem('game_cards', JSON.stringify(game_cards));
@@ -9,16 +14,23 @@ if (localStorage.getItem("game_cards") == null) {
 }
 
 readCheckbox.checked = choose_one.read;
-
+var previousCard;
 function shuffleCards() {
     let deck = JSON.parse(localStorage.getItem("game_cards"));
-    let cardNumber = parseInt(getRandomArbitrary(0, deck.cards.length));
+    let resultCards = deck.cards.filter((cards) => cards.read == false);
+    let cardNumber = parseInt(getRandomArbitrary(0, resultCards.length));
 
-    while (deck.cards[cardNumber].read || cardNumber == choose_one.id) {
-        cardNumber = parseInt(getRandomArbitrary(0, deck.cards.length));
+    if (resultCards.length != 0) {
+        while (previousCard == resultCards[cardNumber].id) {
+            cardNumber = parseInt(getRandomArbitrary(0, resultCards.length));
+        }
+    } else {
+        alert("Entre na coleção para escolher uma carta");
+        return;
     }
 
-    localStorage.setItem("choose_one", JSON.stringify(deck.cards[cardNumber]));
+    previousCard = resultCards[cardNumber].id;
+    localStorage.setItem("choose_one", JSON.stringify(resultCards[cardNumber]));
     showChooseCard();
     return;
 }
