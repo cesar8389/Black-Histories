@@ -13,7 +13,6 @@ div.appendChild(text);
 text.appendChild(spanText);
 
 const toggleModal = () => {
-  console.log('abriu modal');
   spanText.innerHTML = rules.rule1;
 
   buttonNext.value = 2;
@@ -29,7 +28,6 @@ buttonNext.value = 1;
 
 buttonNext.addEventListener('click', function listenButtonNext() {
   flag_buttonNext = true;
-  console.log(this.value)
   carregarCont();
 });
 buttonBack.addEventListener('click', function listenButtonBack() {
