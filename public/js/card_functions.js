@@ -5,7 +5,6 @@ let readCheckbox = document.getElementById('read_checkbox');
 card_button.addEventListener('click', function () {
     readCheckbox.checked = choose_one.read;
     shuffleCards();
-    showChooseCard();
 });
 
 if (localStorage.getItem("game_cards") == null) {
@@ -55,13 +54,33 @@ function readCard(checked) {
 
 function showChooseCard() {
     let titleText = document.getElementById('title_card');
-    let storyText = document.getElementById('story_text');
-    let solutionText = document.getElementById('solution_text');
     let card_info = JSON.parse(localStorage.getItem('choose_one'));
+    let div_front = document.getElementById('div_frontSide');
+    let div_back = document.getElementById('div_backSide');
+    let img_front = document.createElement('img');
+    let img_back = document.createElement('img');
 
-    titleText.innerText = card_info.title;
-    storyText.innerText = card_info.story;
-    solutionText.innerText = card_info.solution;
+    if (div_front.children.length == 2) {
+        let children_front = div_front.children[1];
+        let children_back = div_back.children[0];
+        div_front.removeChild(children_front);
+        div_back.removeChild(children_back);
+    }
+
+    titleText.innerText = '';
+    img_front.src = card_info.img_front;
+    img_back.src = card_info.img_back;
+    img_front.alt = card_info.story;
+    img_back.alt = card_info.solution;
+
+    let exists_front = div_front.getElementsByTagName('img');
+    let exists_back = div_back.getElementsByTagName('img');
+
+    if (exists_front.length == 0 && exists_back.length == 0) {
+        div_front.appendChild(img_front);
+        div_back.appendChild(img_back);
+    }
+
 }
 
 const urlParams = new URLSearchParams(window.location.search);
