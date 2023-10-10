@@ -25,7 +25,7 @@ function shuffleCards() {
             cardNumber = parseInt(getRandomArbitrary(0, resultCards.length));
         }
     } else {
-        alert("Entre na coleção para escolher uma carta");
+        swal("Você já leu todas as cartas. Entre na coleção para escolher uma nova carta");
         return;
     }
 
