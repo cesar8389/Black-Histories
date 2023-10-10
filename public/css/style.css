@@ -7,7 +7,7 @@ body {
 
 p {
     color: white;
-    font-family: fantasy;
+    font-family: cursive;
 }
 
 h2 {
@@ -184,6 +184,16 @@ button:active {
     margin: 15px 0px 0px 30px;
 }
 
+#card_button{
+    display: flex;
+    width: 100px;
+    height: 35px;
+    font-size: 16px;
+    justify-content: center;
+    padding: 5px 0px 0px 0px;
+    margin: 15px 0px 0px -30px;
+}
+
 
 /*  -------- card ------------ */
 
@@ -295,4 +305,55 @@ button:active {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: flex-start;
+}
+/*alert designe*/
+.swal-button {
+    font-family: monospace;
+    font-size: 16px;
+    color: #FAFAFA;
+    text-transform: uppercase;
+    padding: 6px 29px;
+    border-radius: 10px;
+    border: 2px solid #FAFAFA;
+    background: #252525;
+    box-shadow: 3px 3px #fafafa;
+    cursor: pointer;
+    margin: 10px 0;
+}
+.swal-text {
+    font-size: 16px;
+    font-family: cursive;
+    position: relative;
+    float: none;
+    line-height: normal;
+    vertical-align: top;
+    text-align: left;
+    display: inline-block;
+    margin: 0;
+    padding: 0 10px;
+    font-weight: 400;
+    color: white;
+    max-width: calc(100% - 20px);
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+}
+.swal-modal {
+    width: 478px;
+    opacity: 0;
+    pointer-events: none;
+    background-color: #3b3b3b;
+    text-align: center;
+    border-radius: 5px;
+    position: static;
+    margin: 20px auto;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    z-index: 10001;
+    transition: opacity .2s,-webkit-transform .3s;
+    transition: transform .3s,opacity .2s;
+    transition: transform .3s,opacity .2s,-webkit-transform .3s;
 }
